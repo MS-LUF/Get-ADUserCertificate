@@ -1,7 +1,16 @@
 # Get-ADUserCertificate
 simple powershell module to get single or all user/contact certificates from an AD with all related information including metadata
 
-<#
+# install use-onyphe from PowerShell Gallery repository
+You can easily install it from powershell gallery repository
+https://www.powershellgallery.com/packages/Get-ADUserCertificate/
+using a simple powershell command and an internet access :-) 
+```
+	Install-Module -Name Get-ADUserCertificate
+```
+
+# import module from PowerShell 
+```
 	.SYNOPSIS 
 	simple module to get single or all user/contact certificate from an AD
 	look for a certificate in usercert, usercertificate, usersmimecertificate attributes for contact and user object
@@ -15,9 +24,10 @@ simple powershell module to get single or all user/contact certificates from an 
 	.EXAMPLE
 	C:\PS> import-module Get-ADUserCertificate.psm1
 	C:\PS> Remove-Module Get-ADUserCertificate
-#>
+```
 
-<#
+# module content : Get-ADUserCertificate function
+```
 	.SYNOPSIS 
 	get user certificate(s) from contact or user object from an AD
 	look for a certificate in usercert, usercertificate, usersmimecertificate attributes for object contact and user
@@ -32,10 +42,10 @@ simple powershell module to get single or all user/contact certificates from an 
 	Get-ADUserCertificate -searchtype distinguishedName -searchentry "CN=account,OU=testou1,OU=testou,DC=ad,DC=ad,DC=com" -exportcert "C:\test\test\test.cer"
 	Get-ADUserCertificate -searchtype Mail -searchentry "user.account@test.com"
 	Get-ADUserCertificate -searchtype SamAccountNameOrCN -searchentry "UserAccount1" -server anotherad.ad.com
-	
-#>
+```
 
-<#
+# module content : Get-AllADUserCertificates function
+```
 	.SYNOPSIS 
 	get all user certificate(s) from all contact or user objects from an AD
 	look for a certificate in usercert, usercertificate, usersmimecertificate attributes for all contact and user objects
@@ -50,5 +60,4 @@ simple powershell module to get single or all user/contact certificates from an 
 	Get-ADUserCertificate -exportcert "C:\test\test2"
 	Get-ADUserCertificate -skipconfirm $true
 	Get-ADUserCertificate -server anotherad.ad.com
-	
-#>
+```
