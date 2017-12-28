@@ -1,7 +1,7 @@
 # Get-ADUserCertificate
 simple powershell module to get single or all user/contact certificates from an AD with all related information including metadata
 
-# install use-onyphe from PowerShell Gallery repository
+# install Get-ADUserCertificate from PowerShell Gallery repository
 You can easily install it from powershell gallery repository
 https://www.powershellgallery.com/packages/Get-ADUserCertificate/
 using a simple powershell command and an internet access :-) 
