@@ -1,7 +1,7 @@
 # Get-ADUserCertificate
 simple powershell module to get single or all user/contact certificates from an AD with all related information including metadata
 
-# install Get-ADUserCertificate from PowerShell Gallery repository
+## install Get-ADUserCertificate from PowerShell Gallery repository
 You can easily install it from powershell gallery repository
 https://www.powershellgallery.com/packages/Get-ADUserCertificate/
 using a simple powershell command and an internet access :-) 
@@ -9,7 +9,7 @@ using a simple powershell command and an internet access :-)
 	Install-Module -Name Get-ADUserCertificate
 ```
 
-# import module from PowerShell 
+## import module from PowerShell 
 ```
 	.SYNOPSIS 
 	simple module to get single or all user/contact certificate from an AD
@@ -26,7 +26,8 @@ using a simple powershell command and an internet access :-)
 	C:\PS> Remove-Module Get-ADUserCertificate
 ```
 
-# module content : Get-ADUserCertificate function
+## 
+### Get-ADUserCertificate function
 ```
 	.SYNOPSIS 
 	get user certificate(s) from contact or user object from an AD
@@ -44,7 +45,7 @@ using a simple powershell command and an internet access :-)
 	Get-ADUserCertificate -searchtype SamAccountNameOrCN -searchentry "UserAccount1" -server anotherad.ad.com
 ```
 
-# module content : Get-AllADUserCertificates function
+### Get-AllADUserCertificates function
 ```
 	.SYNOPSIS 
 	get all user certificate(s) from all contact or user objects from an AD
